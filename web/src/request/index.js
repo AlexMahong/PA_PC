@@ -11,7 +11,7 @@ export const user_login = (account,password) => Axios.post('/user/login',{accoun
 export const types_add = (params) => Axios.post('/types',params);
 
 /*修改分类
-* id
+* @param {number} id
 * createBy
 * type
 * remarks

@@ -1,0 +1,1 @@
+export const SET_EXPENDTYPES = 'SET_EXPENDTYPES';  // 设置消费类型

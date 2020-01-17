@@ -1,0 +1,81 @@
+body {
+  background-color: #f2f2f2;
+}
+#app {
+  height: 100%;
+}
+
+/*用户界面内容区域宽度*/
+.page-container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+// 白色背景
+.bgWhite {
+  background-color: #ffffff;
+}
+//padding--30px
+.padding30 {
+  padding: 30px;
+}
+.paddingLR30 {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+// 7px 圆角
+.borderRadius {
+  border-radius: 7px;
+}
+
+/*清除浮动*/
+.clearfix {
+  zoom: 1;
+}
+.clearfix:after {
+  content: '\20';
+  display: block;
+  height: 0;
+  clear: both;
+}
+
+/*超出显示省略号*/
+.showEllipsis {
+  display: inline-block;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+/*字号为12的label*/
+.smallLabel {
+  .ant-form label {
+    font-size: 12px;
+  }
+}
+
+/*表格固定列宽*/
+.tableLayoutFixed {
+  table {
+    table-layout: fixed;
+  }
+}
+
+/*管理员界面的左右布局*/
+.admin-page-container {
+  position: relative;
+  .admin-page-left {
+    margin-right: 360px;
+  }
+  .admin-page-right {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 330px;
+    .admin-page-rightItem {
+      margin-bottom: 30px;
+    }
+  }
+}

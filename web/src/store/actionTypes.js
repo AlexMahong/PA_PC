@@ -1,0 +1,1 @@
+export const SET_LOADINGSTATUS = 'SET_LOADINGSTATUS';   // 设置全局loading状态

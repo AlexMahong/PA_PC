@@ -1,0 +1,15 @@
+{
+  "presets": [
+  "latest",
+  "react",
+  "stage-0"
+  ],
+  "plugins": [
+    //用于在js的头部自动引入react
+    "react-require",
+    //polyfill es5不支持的特性（和babel-polyfill类似，但不会污染全局变量）
+    "transform-runtime",
+    // 按需加载组件代码和样式
+    ["import", { "libraryName": "antd"}],
+  ]
+}

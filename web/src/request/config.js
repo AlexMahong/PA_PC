@@ -4,7 +4,9 @@ import {set_loadingStatus} from '../store/action';
 import {Modal} from 'antd'
 
 if(process.env.NODE_ENV === 'development'){
-  axios.defaults.baseURL = 'http://localhost:3000'
+  // axios.defaults.baseURL = 'http://localhost:3000'
+  axios.defaults.baseURL = 'http://106.14.59.182:3000'
+
 }else if(process.env.NODE_ENV === 'production'){
   axios.defaults.baseURL = 'http://106.14.59.182:3000'
 }

@@ -1,6 +1,6 @@
 import Title from '@/components/title'
 import {connect} from "react-redux";
-import Bar from '@/components/bar'
+import Bar from '@/components/bar/YearBar'
 
 class YearBar extends React.Component{
   constructor(props) {

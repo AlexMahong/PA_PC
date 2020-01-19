@@ -29,7 +29,7 @@ class AccountAdd extends React.Component {
           transaction: values.transaction,
           transactionTime: new Date(values.transactionTime),
           money: values.money,
-          type: values.transaction === 'out' ? values.type : '',
+          type: values.transaction === 'out' ? values.type : '收入',
           notes: values.nodes || ''
         }).then(res => {
           if (res.code === 200) {

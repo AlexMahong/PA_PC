@@ -19,7 +19,7 @@ class RecordList extends React.Component{
   }
   // 表格分页、排序、筛选变化时触发
   handleTableChange = (pagination, filters, sorter, data) => {
-    console.log(pagination, filters, sorter, data);
+    // console.log(pagination, filters, sorter, data);
     this.setState({
       pagination: pagination
     })
@@ -33,9 +33,9 @@ class RecordList extends React.Component{
     })
   };
   render(){
-    const {monthList} = this.props;
+    const {monthList = []} = this.props;
     // 收集表格中类型
-    const typeArr = new Set(monthList.map(item => item.type));
+    const typeArr = new Set(monthList.map(item => item.type?item.type:'收入'));
     const filters = Array.from(typeArr).map(item => ({
       text: item,
       value: item
